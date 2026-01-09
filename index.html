@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <h3>Cadastre seu veiculo para vender mais rapido !</h3>
+    </header>
+
+    <main>
+        <form>
+            <div id="campo-form">
+                <div class="campos">
+                    <p class="titleform">FORMULÁRIO</p>
+                </div>
+
+                <div class="campos">
+                    <p>Descreva as caracteristicas e marque os opcionaisque ele possui</p>
+                </div>
+
+                <!--inicio dos campos de entrada de dados-->
+                <div class="campos">
+                    <label for="titulo_anuncio">Titulo do anuncio *</label>
+                    <input type="text" id="titulo_anuncio" name="titulo_anuncio"
+                        placeholder="Um titulo para seu anuncio" minlength="1" maxlength="30" required>
+                </div>
+
+                <div class="campos">
+                    <label for="preco">Preço *</label>
+                    <input type="number" id="preco" name="preco" placeholder="Defina o preço" minlength="1"
+                        maxlength="30" required>
+                </div>
+
+                <div class="campos">
+                    <label for="descricao">Descrição *</label>
+                    <textarea name="descricao" id="descricao" placeholder="Aqui você coloca os detalhes do veiculo, por exemplo : se ele tem algum arranhão.
+                    " required></textarea>
+                </div>
+
+                <div class="campos">
+                    <label for="marca">Marca *</label>
+                    <input type="text" id="marca" name="marca" placeholder="Digite a marca do veiculo" required>
+                </div>
+
+                <div class="campos">
+                    <label for="marca">Modelo *</label>
+                    <input type="text" id="marca" name="marca" placeholder="Digite a marca do veiculo" required>
+                </div>
+
+                <div class="campos">
+                    <label for="km">Kilometragem *</label>
+                    <input type="text" id="km" name="km" placeholder="Digite a marca do veiculo" required>
+                </div>
+
+                <div class="campos">
+                    <label for="data">Data de compra *</label>
+                    <input type="date" id="data" name="data" placeholder="Digite a marca do veiculo" required>
+                </div>
+
+                <div class="campos">
+                    <div id="tipo_cambio">
+                        <label for="cambio">Tipo de cambio : *</label>
+                        <input type="radio">
+                        <label for="cambio" >Manual</label>
+                    </div>
+
+                </div>
+            </div>
+
+
+            </div>
+
+
+        </form>
+    </main>
+</body>
+
+</html>
