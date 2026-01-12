@@ -1,163 +1,229 @@
 <!DOCTYPE html>
-<html lang="ptbr">
+<!-- Declaração do tipo de documento: HTML5 -->
+<html lang="pt-br">
+<!-- Define o idioma da página como Português do Brasil -->
 
 <head>
+    <!-- Define o conjunto de caracteres como UTF-8 (suporte a acentos e caracteres especiais) -->
     <meta charset="UTF-8">
+
+    <!-- Garante responsividade em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importação do arquivo de estilos CSS externo -->
     <link rel="stylesheet" href="/css/style.css">
-    <title>Formulario</title>
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Formulário</title>
 </head>
 
 <body>
-    <header>
 
+    <!-- Cabeçalho da página (reservado para logotipo, menu ou informações institucionais) -->
+    <header>
+        <!-- Conteúdo futuro -->
     </header>
 
+    <!-- Conteúdo principal da página -->
     <main>
+
+        <!-- Início do formulário -->
         <form>
+
+            <!-- Container principal do formulário -->
             <div id="campo-form">
+
+                <!-- Título do formulário -->
                 <div class="campos">
                     <p class="titleform">FORMULÁRIO</p>
                 </div>
 
+                <!-- Texto explicativo para o usuário -->
                 <div class="campos">
-                    <p>Descreva as caracteristicas e marque os opcionaisque ele possui</p>
+                    <p>Descreva as características e marque os opcionais que ele possui</p>
                 </div>
 
-                <!--inicio dos campos de entrada de dados-->
+                <!-- Campo: Título do anúncio -->
                 <div class="campos">
-                    <label for="titulo_anuncio">Titulo do anuncio *</label>
-                    <input type="text" id="titulo_anuncio" name="titulo_anuncio"
-                        placeholder="Um titulo para seu anuncio" minlength="1" maxlength="30" required>
+                    <label for="titulo_anuncio">Título do anúncio *</label>
+                    <input 
+                        type="text" 
+                        id="titulo_anuncio" 
+                        name="titulo_anuncio"
+                        placeholder="Um título para seu anúncio"
+                        minlength="1" 
+                        maxlength="30" 
+                        required>
                 </div>
 
+                <!-- Campo: Preço -->
                 <div class="campos">
                     <label for="preco">Preço *</label>
-                    <input type="number" id="preco" name="preco" placeholder="Defina o preço" minlength="1"
-                        maxlength="30" required>
+                    <input 
+                        type="number" 
+                        id="preco" 
+                        name="preco" 
+                        placeholder="Defina o preço"
+                        required>
                 </div>
 
+                <!-- Campo: Descrição detalhada do veículo -->
                 <div class="campos">
                     <label for="descricao">Descrição *</label>
-                    <textarea name="descricao" id="descricao" placeholder="Aqui você coloca os detalhes do veiculo, por exemplo : se ele tem algum arranhão.
-                    " required></textarea>
+                    <textarea 
+                        name="descricao" 
+                        id="descricao" 
+                        placeholder="Aqui você coloca os detalhes do veículo, por exemplo: se ele tem algum arranhão."
+                        required></textarea>
                 </div>
 
+                <!-- Campo: Marca do veículo -->
                 <div class="campos">
                     <label for="marca">Marca *</label>
-                    <input type="text" id="marca" name="marca" placeholder="Digite a marca do veiculo" required>
+                    <input 
+                        type="text" 
+                        id="marca" 
+                        name="marca" 
+                        placeholder="Digite a marca do veículo" 
+                        required>
                 </div>
 
+                <!-- Campo: Modelo do veículo -->
                 <div class="campos">
-                    <label for="marca">Modelo *</label>
-                    <input type="text" id="marca" name="marca" placeholder="Digite a marca do veiculo" required>
+                    <label for="modelo">Modelo *</label>
+                    <input 
+                        type="text" 
+                        id="modelo" 
+                        name="modelo" 
+                        placeholder="Digite o modelo do veículo" 
+                        required>
                 </div>
 
+                <!-- Campo: Quilometragem -->
                 <div class="campos">
-                    <label for="km">Kilometragem *</label>
-                    <input type="text" id="km" name="km" placeholder="Digite a marca do veiculo" required>
+                    <label for="km">Quilometragem *</label>
+                    <input 
+                        type="text" 
+                        id="km" 
+                        name="km" 
+                        placeholder="Informe a quilometragem" 
+                        required>
                 </div>
 
+                <!-- Campo: Data de compra -->
                 <div class="campos">
                     <label for="data">Data de compra *</label>
-                    <input type="date" id="data" name="data" placeholder="Digite a marca do veiculo" required>
+                    <input 
+                        type="date" 
+                        id="data" 
+                        name="data" 
+                        required>
                 </div>
 
+                <!-- Grupo de campos: Tipo de câmbio (radio button) -->
                 <div class="campos-2">
                     <div class="campo-radio">
                         <div id="tipo_cambio">
-                            <label>Tipo de cambio : *</label>
 
+                            <!-- Rótulo do grupo -->
+                            <label>Tipo de câmbio *</label>
+
+                            <!-- Opção: Manual -->
                             <input type="radio" id="manual" name="cambio" value="manual">
                             <label for="manual">Manual</label>
 
+                            <!-- Opção: Automático -->
                             <input type="radio" id="automatico" name="cambio" value="automatico">
                             <label for="automatico">Automático</label>
                         </div>
                     </div>
                 </div>
 
+                <!-- Grupo de campos: Opcionais do veículo -->
                 <div class="campos-2">
                     <div class="campo-select">
+
+                        <!-- Título da seção de checkboxes -->
+                        <div id="title-checkbox">
+                            <label id="title-op">Opcionais *</label>
+                        </div>
+
+                        <!-- Lista de opcionais - Coluna 1 -->
                         <div class="campo-check">
-                            <div id="title-checkbox">
-                                <label id="title-op">Opcionais : *</label>
-                            </div>
                             <ul>
                                 <li>
                                     <input type="checkbox" id="airbag" name="opcionais[]" value="airbag">
                                     <label for="airbag">Airbag</label>
                                 </li>
-                            </ul>
-                            <ul>
                                 <li>
                                     <input type="checkbox" id="alarme" name="opcionais[]" value="alarme">
                                     <label for="alarme">Alarme</label>
                                 </li>
-                            </ul>
-                            <ul>
                                 <li>
-                                    <input type="checkbox" id="arCondicionado" name="opcionais[]"
-                                        value="arCondicionado">
+                                    <input type="checkbox" id="arCondicionado" name="opcionais[]" value="arCondicionado">
                                     <label for="arCondicionado">Ar Condicionado</label>
-
                                 </li>
-                            </ul>
-                            <ul>
                                 <li>
-                                    <input type="checkbox" id="cameraDere" name="opcionais" value="cameraDere">
-                                    <label for="cameraDere">Camera de Ré</label>
+                                    <input type="checkbox" id="cameraRe" name="opcionais[]" value="cameraRe">
+                                    <label for="cameraRe">Câmera de Ré</label>
                                 </li>
                             </ul>
                         </div>
 
+                        <!-- Lista de opcionais - Coluna 2 -->
                         <div class="campo-check">
                             <ul>
                                 <li>
                                     <input type="checkbox" id="assistente" name="opcionais[]" value="assistente">
-                                    <label for="airbag">Assistente 24H</label>
+                                    <label for="assistente">Assistência 24H</label>
                                 </li>
-                            </ul>
-                            <ul>
                                 <li>
-                                    <input type="checkbox" id="partidaKeyless" name="opcionais[]"
-                                        value="partidaKeyless">
+                                    <input type="checkbox" id="partidaKeyless" name="opcionais[]" value="partidaKeyless">
                                     <label for="partidaKeyless">Partida Keyless</label>
                                 </li>
-                            </ul>
-                            <ul>
                                 <li>
-                                    <input type="checkbox" id="intregracaoCelular" name="opcionais[]"
-                                        value="intregracaoCelular">
-                                    <label for="arCondicionado">Integração com Celular</label>
-
+                                    <input type="checkbox" id="integracaoCelular" name="opcionais[]" value="integracaoCelular">
+                                    <label for="integracaoCelular">Integração com Celular</label>
                                 </li>
-                            </ul>
-                            <ul>
                                 <li>
                                     <input type="checkbox" id="bancoCouro" name="opcionais[]" value="bancoCouro">
                                     <label for="bancoCouro">Banco de Couro</label>
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
 
+                <!-- Upload de imagens do veículo -->
                 <div class="campo-check">
                     <div id="title-file">
-                        <label id="title-op">Fotos do Carro : *</label>
+                        <label id="title-op">Fotos do Carro *</label>
                     </div>
+
+                    <!-- Campo para upload múltiplo de imagens -->
                     <div id="campo-img">
-                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required />
+                        <input 
+                            type="file" 
+                            id="images" 
+                            name="images" 
+                            accept="image/png, image/jpg" 
+                            multiple 
+                            required>
                     </div>
+
+                    <!-- Botão de envio do formulário -->
                     <div id="campo-botao">
                         <input type="submit" value="Enviar" class="botao-enviar">
                     </div>
                 </div>
 
             </div>
+            <!-- Fim do container principal -->
 
         </form>
+        <!-- Fim do formulário -->
+
     </main>
 </body>
 
