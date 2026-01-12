@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <h3>Cadastre seu veiculo para vender mais rapido !</h3>
+
     </header>
 
     <main>
@@ -63,19 +63,99 @@
                     <input type="date" id="data" name="data" placeholder="Digite a marca do veiculo" required>
                 </div>
 
-                <div class="campos">
-                    <div id="tipo_cambio">
-                        <label for="cambio">Tipo de cambio : *</label>
-                        <input type="radio">
-                        <label for="cambio" >Manual</label>
+                <div class="campos-2">
+                    <div class="campo-radio">
+                        <div id="tipo_cambio">
+                            <label>Tipo de cambio : *</label>
+
+                            <input type="radio" id="manual" name="cambio" value="manual">
+                            <label for="manual">Manual</label>
+
+                            <input type="radio" id="automatico" name="cambio" value="automatico">
+                            <label for="automatico">Automático</label>
+                        </div>
                     </div>
-
                 </div>
+
+                <div class="campos-2">
+                    <div class="campo-select">
+                        <div class="campo-check">
+                            <div id="title-checkbox">
+                                <label id="title-op">Opcionais : *</label>
+                            </div>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="airbag" name="opcionais[]" value="airbag">
+                                    <label for="airbag">Airbag</label>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="alarme" name="opcionais[]" value="alarme">
+                                    <label for="alarme">Alarme</label>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="arCondicionado" name="opcionais[]"
+                                        value="arCondicionado">
+                                    <label for="arCondicionado">Ar Condicionado</label>
+
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="cameraDere" name="opcionais" value="cameraDere">
+                                    <label for="cameraDere">Camera de Ré</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="campo-check">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="assistente" name="opcionais[]" value="assistente">
+                                    <label for="airbag">Assistente 24H</label>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="partidaKeyless" name="opcionais[]"
+                                        value="partidaKeyless">
+                                    <label for="partidaKeyless">Partida Keyless</label>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="intregracaoCelular" name="opcionais[]"
+                                        value="intregracaoCelular">
+                                    <label for="arCondicionado">Integração com Celular</label>
+
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="bancoCouro" name="opcionais[]" value="bancoCouro">
+                                    <label for="bancoCouro">Banco de Couro</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="campo-check">
+                    <div id="title-file">
+                        <label id="title-op">Fotos do Carro : *</label>
+                    </div>
+                    <div id="campo-img">
+                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required />
+                    </div>
+                    <div id="campo-botao">
+                        <input type="submit" value="Enviar" class="botao-enviar">
+                    </div>
+                </div>
+
             </div>
-
-
-            </div>
-
 
         </form>
     </main>

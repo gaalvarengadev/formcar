@@ -11,15 +11,11 @@ body {
 
 header {
 
-    background: #673ab7;
+    background: #A9A9A9;
     height: 200px;
 }
 
-header h3 {
 
-    color: #ffff;
-    padding: 20px;
-}
 
 .titleform {
 
@@ -51,16 +47,100 @@ header h3 {
     text-align: center;
 }
 
-.campos input,textarea {
+.campos input,
+textarea {
 
     border: none;
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
-    display: block; 
+    display: block;
     width: 80%;
 }
 
 #tipo_cambio {
 
     display: inline;
+
+}
+
+#tipo_cambio {
+
+    margin-bottom: 40px;
+}
+
+.campos-radio input {
+
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+}
+
+#tipo_cambio label {
+    display: inline-block;
+    margin-right: 15px;
+
+}
+
+.campos-2 {
+
+    padding-bottom: 10px;
+    margin: 20px;
+
+
+}
+
+li {
+
+    list-style: none;
+    padding: 5px;
+}
+
+#title-checkbox {
+    padding-bottom: 20px;
+}
+
+#images {
+
+    border-bottom: 1px solid #ccc;
+    width: 30%;
+    padding: 10px 0;
+    margin-left: 15px;
+
+}
+
+#campo-img {
+
+    padding: 10px;
+}
+
+#title-file label {
+
+    margin-left: 24px;
+}
+
+.botao-enviar {
+
+    background-color: #673ab7;
+    color: #fff;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.botao-enviar:hover {
+  
+    background-color: #fff;
+    border-color: #673ab7;
+    color: #673ab7;
+}
+
+
+
+#campo-botao {
+
+    margin-top: 40px;
+    margin-left: 24px;
 }
